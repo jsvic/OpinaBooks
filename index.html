@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpinaBooks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <span>OpinaBooks</span>
+        </header>
+        <main>
+            <section id="main_row1">
+                <div id="section_header">
+                    <h1>Adicionar Livro</h1>
+                </div>
+
+                <div id="row1_section_body">
+                    <form action="./bd/addBook.php" method="post" enctype="multipart/form-data">
+                            <div id="section_body_labels">
+
+                            <label for="inTitle">
+                                Título
+                                <input type="text" id="inTitle" name="inTitle" required>
+                            </label>
+                    
+                            <label for="inAuthor">
+                                Autor
+                                <input type="text" id="inAuthor" name="inAuthor" required>
+                            </label>
+                            <label for="inRelease">
+                                Ano de Lançamento
+                                <input type="number" id="inRelease" name="inRelease" required>
+                            </label>
+
+                            <span>
+                                Gênero
+                                <select name="slcGenre" id="slcGenre" required>
+                                    <option value=""></option>
+                                    <option value="Romance">Romance</option>
+                                    <option value="Fantasia">Fantasia</option>
+                                    <option value="Suspense">Suspense</option>
+                                    <option value="Ficção Científica">Ficção Científica</option>
+                                    <option value="Distopias">Distopias</option>
+                                    <option value="Space Operas">Space Operas</option>
+                                    <option value="Cyberpunk">Cyberpunk</option>
+                                </select>
+                            </span>
+
+                            <label for="rnRating">
+                                Nota
+                                <input type="range" name="rnRating" id="rnRating" onchange="mostrarRange()" value="3" min="0" max="10" required>
+
+                                <span id="outRanger">3 ⭐</span>
+                            </label>
+
+                            <label for="inImg" id="lbFile">
+                                Imagem
+                                <input type="file" id="inImg" name="inImg" required>
+                            </label>
+                        </div>
+                        <div id="section_body_text">
+                            <label for="txtComment">
+                                Comentário
+                                <textarea name="txtComment" id="txtComment"></textarea>
+                            </label>
+                        </div>
+                        
+                        <div id="section_body_buttons">
+                            <div id="div_button">
+                                <button type="submit" class="btnMain">Adicionar</button>
+                                    <button type="button" class="btnLimpar">Limpar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    </section>
+                    
+                    
+                <section id="main_row2">
+
+        
+                
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
