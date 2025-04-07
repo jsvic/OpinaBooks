@@ -4,10 +4,10 @@ O projeto é uma plataforma que permite aos usuários adicionar livros à sua co
 ## ℹ️ Sobre o Projeto
 O OpinaBooks é uma aplicação web que utiliza diversos conceitos importantes dessa área, como API e Banco de Dados. <br> <br>Foi desenvolvido com as seguintes tecnologias:
 <ul>
-  <li>Linguagens: Javascript, HTML&CSS, PHP, SQL</li>
-  <li>API: API REST (criada com PHP)</li>
-  <li>Banco de Dados: MySql</li>
-  <li>Software: XAMPP</li>
+  <li>Linguagens: Javascript, HTML&CSS, PHP, SQL;</li>
+  <li>API: API REST (criada com PHP);</li>
+  <li>Banco de Dados: MySql;</li>
+  <li>Software: XAMPP.</li>
 </ul>
 
 ## 📝 Contribuição
