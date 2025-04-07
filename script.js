@@ -1,3 +1,5 @@
+const urlAtual = window.location.href
+
 function mostrarRange() {
     let rnRating = document.querySelector('#rnRating')
     let outRanger = document.querySelector('#outRanger')
@@ -5,8 +7,14 @@ function mostrarRange() {
     outRanger.innerHTML = `${rnRating.value}⭐`
 }
 
+let arrUrl = urlAtual.split('/')
+arrUrl.pop()
+arrUrl = `${arrUrl.join('/')}/api/apiGet.php`
+console.log(arrUrl)
+
+
 const fetchApi = () => {
-    const result = fetch('http://localhost/mysql/estudos/projetos/OpinaBooks/api/apiGet.php').then((res) => res.json()).then((data) => {
+    const result = fetch(arrUrl).then((res) => res.json()).then((data) => {
         return data
     })
 
@@ -15,8 +23,8 @@ const fetchApi = () => {
 
 const main_row2 = document.querySelector('#main_row2')
 
+
 async function outBooks() {
-    console.log(await fetchApi())
     let books = await fetchApi()
 
     books.forEach(element => {
