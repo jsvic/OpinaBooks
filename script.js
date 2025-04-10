@@ -44,7 +44,7 @@ async function outBooks() {
                         
                         <br>
                         
-                        <p>
+                        <p class= "book_comment">
                             ${element['comment']}
                         </p>
                     </div>
