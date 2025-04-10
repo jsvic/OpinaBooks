@@ -259,3 +259,9 @@ button, select {
     display: flex;
     justify-content: space-between;
 }
+
+.book_comment {
+    max-height: 50px;
+    word-break: break-word;
+    overflow-y: scroll;
+}
